@@ -25,6 +25,8 @@ SOFTWARE.
 import {Header} from "./Header.jsx";
 import {Paragraph} from "./Paragraph.jsx";
 
+import packageJson from "../package.json";
+
 export default function App() {
     const greeting = "Hello again, World!";
     const textContent = "This isn't that much but it is a nice start!";
@@ -32,7 +34,7 @@ export default function App() {
     return (
         <>
             <Header greeting={greeting} />
-            <Paragraph message={textContent} />
+            <Paragraph message={textContent} version={packageJson.version} />
         </>
     );
 }

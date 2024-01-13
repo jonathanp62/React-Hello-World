@@ -29,13 +29,13 @@ import './styles.css'
 export function Paragraph(props) {
     return (
         <div>
-            <p className="p-text">
-                {props.message}
-            </p>
+            <p className="p-text">{props.message}</p>
+            <p className="p-text">Version {props.version}</p>
         </div>
     );
 }
 
 Paragraph.propTypes = {
     message: PropTypes.string.isRequired, // Add the missing prop type validation
+    version: PropTypes.string.isRequired,
 };
