@@ -22,10 +22,16 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */}
 
-export function Header() {
+import PropTypes from 'prop-types';
+
+export function Header(props) {
     return (
         <div>
-            <h1>Hello, World!</h1>
+            <h1>{props.greeting}</h1>
         </div>
-    )
+    );
 }
+
+Header.propTypes = {
+    greeting: PropTypes.string.isRequired, // Add the missing prop type validation
+};

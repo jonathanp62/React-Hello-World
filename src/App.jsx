@@ -26,10 +26,13 @@ import {Header} from "./Header.jsx";
 import {Paragraph} from "./Paragraph.jsx";
 
 export default function App() {
-  return (
-    <>
-        <Header />
-        <Paragraph />
-    </>
-  )
+    const greeting = "Hello again, World!";
+    const textContent = "This isn't that much but it is a nice start!";
+
+    return (
+        <>
+            <Header greeting={greeting} />
+            <Paragraph message={textContent} />
+        </>
+    );
 }

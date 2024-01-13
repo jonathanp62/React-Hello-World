@@ -22,14 +22,20 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */}
 
+import PropTypes from 'prop-types';
+
 import './styles.css'
 
-export function Paragraph() {
+export function Paragraph(props) {
     return (
         <div>
             <p className="p-text">
-                This isn&apos;t much but it is a nice start!
+                {props.message}
             </p>
         </div>
-    )
+    );
 }
+
+Paragraph.propTypes = {
+    message: PropTypes.string.isRequired, // Add the missing prop type validation
+};
