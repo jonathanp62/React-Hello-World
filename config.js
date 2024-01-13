@@ -1,4 +1,4 @@
-{/*
+/*
 MIT License
 
 Copyright (c) 2024 Jonathan M. Parker
@@ -20,24 +20,10 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-*/}
+*/
 
-import {Config} from "../config.js";
-import {Header} from "./Header.jsx";
-import {Paragraph} from "./Paragraph.jsx";
+const Config = {
+    author: "Jonathan Parker",
+};
 
-import packageJson from "../package.json";
-
-export default function App() {
-    const greeting = "Hello, " + Config.author + "!";
-    const textContent = "This isn't that much but it is a nice start!";
-
-    return (
-        <>
-            <Header greeting={greeting} />
-            <Paragraph
-                message={textContent}
-                version={packageJson.version} />
-        </>
-    );
-}
+export { Config }
