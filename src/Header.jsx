@@ -1,4 +1,4 @@
-/*
+{/*
 MIT License
 
 Copyright (c) 2024 Jonathan M. Parker
@@ -20,15 +20,12 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
- */
+*/}
 
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
-.p-text {
-  color: #888;
+export function Header() {
+    return (
+        <div>
+            <h1>Hello, World!</h1>
+        </div>
+    )
 }

@@ -22,14 +22,14 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */}
 
-import {Header} from "./Header.jsx";
-import {Paragraph} from "./Paragraph.jsx";
+import './styles.css'
 
-export default function App() {
-  return (
-    <>
-        <Header />
-        <Paragraph />
-    </>
-  )
+export function Paragraph() {
+    return (
+        <div>
+            <p className="p-text">
+                This isn&apos;t much but it is a nice start!
+            </p>
+        </div>
+    )
 }
